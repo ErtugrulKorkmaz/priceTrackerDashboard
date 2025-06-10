@@ -1,0 +1,106 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1A2B3C; /* Dark Navy arka plan */
+    color: #f8f9fa; /* Açık gri metin rengi */
+}
+
+/* Başlıklar için renk ayarları */
+h1 {
+    color: #e9ecef !important; /* Açık bir renk, Bootstrap'ın text-primary'sini ezer */
+}
+
+h2 {
+    color: #ced4da !important; /* Biraz daha koyu açık gri */
+}
+
+/* Container, Card gibi elemanların background'u */
+.container {
+    background-color: #1A2B3C; /* Container'ın kendisi de background ile aynı olsun */
+    /* Box-shadow rengini de ayarlayabiliriz */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Biraz daha belirgin gölge */
+    border-radius: 8px; /* Köşeleri yuvarlama */
+}
+
+.card {
+    background-color: #ffffff; /* Kartların içini beyaz yapalım */
+    color: #343a40; /* Kart içindeki metin koyu olsun */
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Hafif bir gölge */
+}
+
+/* Flash Mesajları */
+.flash-messages {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.flash-messages li {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Bootstrap'ın alert sınıflarını dark theme'e göre uyarlayalım */
+.flash-messages li.alert-danger { /* Bootstrap'ın 'alert alert-danger' için */
+    background-color: #dc3545; /* Kırmızı kalsın */
+    color: #fff; /* Beyaz metin */
+    border: 1px solid #dc3545;
+}
+
+.flash-messages li.alert-success { /* Bootstrap'ın 'alert alert-success' için */
+    background-color: #28a745; /* Yeşil kalsın */
+    color: #fff; /* Beyaz metin */
+    border: 1px solid #28a745;
+}
+
+.flash-messages li.alert-info { /* Bilgi mesajları için */
+    background-color: #17a2b8;
+    color: #fff;
+    border: 1px solid #17a2b8;
+}
+
+/* Zaman Aralığı Seçici için stil (Bootstrap sınıfları ile birlikte) */
+.timeframe-selector label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color: #e9ecef; /* Açık renk metin */
+}
+
+.timeframe-selector select {
+    padding: 0.375rem 1rem;
+    border: 1px solid #6c757d; /* Koyu arka plan için daha belirgin bir çerçeve */
+    border-radius: 0.25rem;
+    background-color: #34495e; /* Koyu tema için daha koyu select kutusu */
+    color: #e9ecef; /* Açık metin */
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.timeframe-selector select:hover {
+    border-color: #0d6efd;
+}
+
+.timeframe-selector select:focus {
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Linkler */
+a {
+    color: #0d6efd; /* Bootstrap primary link rengi */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
