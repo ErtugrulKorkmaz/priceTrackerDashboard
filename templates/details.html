@@ -62,8 +62,8 @@
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 tension: 0.1,
                 fill: false,
-                pointRadius: 2, // Nokta boyutunu küçült
-                pointHoverRadius: 5 // Üzerine gelince nokta boyutunu büyüt
+                pointRadius: 2, 
+                pointHoverRadius: 5
             }];
 
             if (smaData20 && smaData20.length > 0) {
@@ -74,8 +74,8 @@
                     backgroundColor: 'rgba(255, 99, 132, 0.2)',
                     tension: 0.1,
                     fill: false,
-                    borderDash: [5, 5], // Kesikli çizgi
-                    pointRadius: 0 // SMA çizgisi için nokta gösterme
+                    borderDash: [5, 5], 
+                    pointRadius: 0 
                 });
             }
 
@@ -101,7 +101,7 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false, // Daha esnek boyutlandırma için
+                    maintainAspectRatio: false, 
                     scales: {
                         x: {
                             type: 'time',
